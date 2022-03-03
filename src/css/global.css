@@ -1,0 +1,66 @@
+:root {
+  --text-size: 1.25rem;
+  --padding: 20px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.333;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: var(--text-size);
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin-top: 0
+}
+
+h1 {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+h6 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+}
+
+/*
+ * utility classes
+ */
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.pd {
+  padding: var(--padding);
+}
+
+/*
+ * page parts
+ */
+.siteheader__logo {
+  width: 150px;
+}
