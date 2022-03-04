@@ -1,7 +1,8 @@
 :root {
   --text-size: 1.25rem;
   --padding: 20px;
-
+  --heading-font: "Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif";
+  --main-text: #212121;
 }
 
 * {
@@ -15,7 +16,19 @@ body {
   font-size: var(--text-size);
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  margin-top: 0;
+}
+
+p,
+ul,
+ol {
   margin-top: 0
 }
 
@@ -46,6 +59,17 @@ h6 {
   font-size: clamp(1.4rem, 4vw, 2rem);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: 1rem;
+  padding: 5px 0;
+}
+
 /*
  * utility classes
  */
@@ -63,4 +87,22 @@ h6 {
  */
 .siteheader__logo {
   width: 150px;
+}
+
+.button--skip-link {
+  background: #fff;
+  border: 2px solid var(--main-text);
+  border-radius: 4px;
+  color: var(--main-text);
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  padding: 10px 15px;
+  left: 5px;
+  position: absolute;
+  top: -300px;
+}
+
+.button--skip-link:focus {
+  top: 10px;
 }
