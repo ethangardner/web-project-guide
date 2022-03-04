@@ -1,8 +1,33 @@
 const fs = require("fs");
+const Image = require("@11ty/eleventy-img");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+
+async function imageShortcode(
+  src,
+  alt,
+  widths = [null, 400, 700],
+  formats = ['jpeg', 'webp'],
+  sizes = '(max-width: 700px) 100vw, 700px',
+  loading = "lazy"
+  ) {
+  let metadata = await Image(src, {
+    widths,
+    formats
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading,
+    decoding: "async",
+  };
+
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  return Image.generateHTML(metadata, imageAttributes);
+}
 
 module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
@@ -15,6 +40,9 @@ module.exports = function(eleventyConfig) {
 
   // Alias `layout: article` to `layout: layouts/post.njk`
   eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
+
+  // shortcode
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
