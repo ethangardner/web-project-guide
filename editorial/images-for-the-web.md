@@ -1,0 +1,102 @@
+---
+layout: article
+title: Images for the Web
+---
+Images convey meaning to our users that would be difficult to achieve with words alone. For many, beautiful imagery is in essential part of the content experience.
+
+Unfortunately, images are also bandwidth-intensive and are often the single largest contributor to overall page weight. The higher the page weight, the longer the page takes to load. 
+
+<figure>
+<blockquote>Consumer engagement and likelihood to convert [are] most effected by site speed.</blockquote>
+<figcaption>
+Deloitte <cite><a href="https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/Consulting/Milliseconds_Make_Millions_report.pdf">Milliseconds Make Millions</a></cite>
+</figcaption>
+</figure>
+
+<figure>
+{% image "img/content-type-distribution.png", "Images accounted for 61% of the overall page weight in this test" %}
+<figcaption>Data from a sample article on one of our sites</figcaption>
+</figure>
+
+Choosing the optimal format for images can help offset the detrimental impact they can have on page speed. Sometimes, even choosing a specific file type over another can go a long way in making sure our pages remain fast for our users.
+
+## Image Formats
+There are three main image formats that dominate the web, GIF, JPEG, and PNG. Each one of these has their own distinct strengths.
+
+### JPEG
+JPEG files are the most common on the internet and for good reason. This format is ideal for any image that came from the lens of a camera. this includes pictures of people, animals, or still-life scenery.
+
+The "P" in JPEG actually stands for _photographic_.
+
+If you're not sure what format to use, JPEG is a fairly safe bet.
+
+<figure>
+{% image "img/proper-jpeg-usage.jpeg", "Wooden house in mountain setting" %}
+<figcaption>This was a perfect use of JPEG.</figcaption>
+</figure>
+
+#### Features:
+- Supports 16 million colors
+- Results in small file sizes when used for photographs when compared to other formats
+- Can change the amount of compression to manipulate file size and quality (60-80% quality is the sweet spot)
+
+#### Best for:
+- Photographs of people, places, or things
+
+### GIF
+GIF files were the first image format supported in the early days of the internet. GIF files are only capable of 256 colors, which is a relic of computer capabilities from the era. Their one unique benefit over other image formats is they support animation. 
+
+<figure>
+<img alt="Image of moon orbit" height="192" src="/img/proper-gif-usage.gif" width="256" />
+<figcaption>Animation is supported in GIF images</figcaption>
+</figure>
+
+__Fun fact:__ this tiny little image is 6x the file size of the example JPEG
+
+#### Features:
+- Support animation
+- Support binary transparency (fully opaque or fully transparent)
+- 256 colors
+
+#### Best for:
+- When animation is required, but video cannot be used (e.g. embedding in emails).  
+ 
+Videos are often smaller and therefore more performant, which is why companies like Twitter convert GIF files to video behind the scenes when you share on their platform.
+
+### PNG
+PNG files come in two different varieties, 8-bit (PNG-8) and 24-bit (PNG-24). Both use a `*.png` file extension, but they are quite different. 
+
+The 8-bit variety are similar to GIF supporting both transparency and 256 colors but often result in a smaller file when used for graphics. 
+
+The 24-bit variety are similar to JPEGs, supporting millions of colors but usually result in a significantly larger file size.   
+
+#### PNG-8
+Like GIFs, PNG-8 supports 256 colors. These images are best suited to illustrations or diagrams that were created digitally, such as the sewing patterns, building plans, and diagrams featured on our sites. 
+
+<figure>
+{% image "img/proper-png-usage.png", "Sewing instructions" %}
+<figcaption>These instructions are a perfect use of a PNG-8</figcaption>
+</figure>
+
+##### Features:
+- Support transparency
+- 256 colors
+- Result in smaller files than GIFs in most cases
+
+##### Best for:
+- Diagrams
+- Charts
+- Logos with few colors
+
+#### PNG-24
+Similar to JPEGs, PNG-24 files support millions of colors, but they also support alpha-channel transparency. Unlike the fully-on/fully-off binary transparency of GIF files, alpha-channel transparency means that pixels can be semi-transparent.
+
+PNG-24 files are typically used outside of the editorial setting where a developer might need to compose multiple images with code to make a page interactive. For example, a promo might require an image of magazine covers overlaid on top of a patterned background, and this is an example of when PNG-24 files are used. 
+
+##### Features:
+- Support alpha-channel transparency
+- Support millions of colors
+
+##### Best for:
+- Image composition
+- Logos with many colors

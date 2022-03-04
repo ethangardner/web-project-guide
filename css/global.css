@@ -1,8 +1,11 @@
 :root {
-  --text-size: 1.25rem;
-  --padding: 20px;
-  --heading-font: "Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif";
-  --main-text: #212121;
+  --font-size-2: 1.25rem;
+  --spacing-20: 20px;
+  --font-serif: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  --black-1: #212121;
+  --bg: #ffffff;
+  --gray-0: #686868;
 }
 
 * {
@@ -10,10 +13,9 @@
 }
 
 body {
-  line-height: 1.333;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: var(--text-size);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2);
+  line-height: 1.5;
 }
 
 h1,
@@ -22,29 +24,30 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font);
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.25;
   margin-top: 0;
+  margin-bottom: clamp(.333rem, 50vw, 1rem);
 }
 
 p,
 ul,
 ol {
-  margin-top: 0
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 
 h1 {
   font-size: clamp(2.4rem, 4vw, 3.2rem);
-  font-weight: 400;
 }
 
 h2 {
   font-size: clamp(2.2rem, 4vw, 3rem);
-  font-weight: 400;
 }
 
 h3 {
   font-size: clamp(1.9rem, 4vw, 2.7rem);
-  font-weight: 400;
 }
 
 h4 {
@@ -65,9 +68,34 @@ img {
   height: auto;
 }
 
+figure {
+  margin: 0 auto 1.5rem;
+  padding: 0;
+}
+
+figure img {
+  margin: 0 auto;
+}
+
 figcaption {
   font-size: 1rem;
   padding: 5px 0;
+  text-align: center;
+}
+
+blockquote {
+  background:
+    linear-gradient(to right, var(--gray-0)  4px, transparent 4px) 0 100%,
+    linear-gradient(to left, var(--gray-0)  4px, transparent 4px) 100% 0,
+    linear-gradient(to bottom, var(--gray-0) 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, var(--gray-0) 4px, transparent 4px) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 2rem;
+  margin: 0;
+  padding: var(--spacing-20);
 }
 
 /*
@@ -79,7 +107,7 @@ figcaption {
 }
 
 .pd {
-  padding: var(--padding);
+  padding: var(--spacing-20);
 }
 
 /*
@@ -91,9 +119,9 @@ figcaption {
 
 .button--skip-link {
   background: #fff;
-  border: 2px solid var(--main-text);
+  border: 2px solid var(--black-1);
   border-radius: 4px;
-  color: var(--main-text);
+  color: var(--black-1);
   display: inline-block;
   line-height: 1;
   text-decoration: none;
@@ -105,4 +133,9 @@ figcaption {
 
 .button--skip-link:focus {
   top: 10px;
+}
+
+.tmpl-article .content-body {
+  margin: 0 auto;
+  max-width: 700px;
 }
