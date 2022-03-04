@@ -13,8 +13,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
-  // Alias `layout: post` to `layout: layouts/post.njk`
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  // Alias `layout: article` to `layout: layouts/post.njk`
+  eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {

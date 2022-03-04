@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }} | {{ site.name }}</title>
-  <link rel="stylesheet" href="{{ 'css/normalize.css' | url }}">
-  <link rel="stylesheet" href="{{ 'css/global.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/global.css' | url }}">
 </head>
-<body>
+<body {% if templateClass %} class="{{ templateClass }}"{% endif %}>
 <header class="siteheader pd">
   <div class="container">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 585.414 150" class="siteheader__logo">
@@ -21,6 +21,6 @@
     {{ content | safe }}
   </div>
 </div>
-<script src="{{ 'js/scripts.js' | url }}"></script>
+<script src="{{ '/js/scripts.js' | url }}"></script>
 </body>
 </html>
