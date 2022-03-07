@@ -14,7 +14,7 @@ Deloitte <cite><a href="https://www2.deloitte.com/content/dam/Deloitte/ie/Docume
 </figure>
 
 <figure>
-{% image "img/content-type-distribution.png", "Images accounted for 61% of the overall page weight in this test", [null, 400, 700], ['png', 'webp'] %}
+{% image "img/content-type-distribution.png", "Images accounted for 61% of the overall page weight in this test", [null, 400, 700] %}
 <figcaption>Data from a sample article on one of our sites</figcaption>
 </figure>
 
