@@ -14,8 +14,8 @@ Deloitte <cite><a href="https://www2.deloitte.com/content/dam/Deloitte/ie/Docume
 </figure>
 
 <figure>
-{% image "img/content-type-distribution.png", "Images accounted for 61% of the overall page weight in this test", [null, 400, 700] %}
-<figcaption>Data from a sample article on one of our sites</figcaption>
+{% image "img/content-type-distribution.png", "Images accounted for 61% of the overall page weight in this test", [null, 400, 700], ['png', 'webp'] %}
+<figcaption>Data from a sample article on one of our sites. 61% of the uncompressed page weight in this test came from images</figcaption>
 </figure>
 
 Choosing the optimal format for images can help offset the detrimental impact they can have on page speed. Sometimes, even choosing a specific file type over another can go a long way in making sure our pages remain fast for our users.
