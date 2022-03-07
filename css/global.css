@@ -9,13 +9,13 @@
   --gray-0: #686868;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --black-1: #DEDEDE;
-    --bg: #000000;
-    --link: #7D7DFF;
-  }
-}
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --black-1: #DEDEDE;*/
+/*    --bg: #000000;*/
+/*    --link: #7D7DFF;*/
+/*  }*/
+/*}*/
 
 * {
   box-sizing: border-box;
