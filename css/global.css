@@ -3,9 +3,18 @@
   --spacing-20: 20px;
   --font-serif: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
   --font-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
-  --black-1: #212121;
+  --black-1: #dedede;
   --bg: #ffffff;
+  --link: #5353FF;
   --gray-0: #686868;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black-1: #DEDEDE;
+    --bg: #000000;
+    --link: #7D7DFF;
+  }
 }
 
 * {
@@ -13,6 +22,8 @@
 }
 
 body {
+  background: var(--bg);
+  color: var(--black-1);
   font-family: var(--font-sans);
   font-size: var(--font-size-2);
   line-height: 1.5;
@@ -60,6 +71,10 @@ h5 {
 
 h6 {
   font-size: clamp(1.4rem, 4vw, 2rem);
+}
+
+a {
+  color: var(--link);
 }
 
 img {
@@ -114,11 +129,12 @@ blockquote {
  * page parts
  */
 .siteheader__logo {
+  fill: var(--black-1);
   width: 150px;
 }
 
 .button--skip-link {
-  background: #fff;
+  background: var(--bg);
   border: 2px solid var(--black-1);
   border-radius: 4px;
   color: var(--black-1);
