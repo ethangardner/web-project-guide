@@ -15,7 +15,7 @@ Deloitte <cite><a href="https://www2.deloitte.com/content/dam/Deloitte/ie/Docume
 
 <figure>
 {% image "img/content-type-distribution.png", "Images accounted for 61% of the overall page weight in this test", [null, 400, 700], ['png', 'webp'] %}
-<figcaption>Data from a sample article on one of our sites. 61% of the uncompressed page weight in this test came from images</figcaption>
+<figcaption>Data from a sample article on one of our sites. 61% of the compressed page weight in this test came from images</figcaption>
 </figure>
 
 Choosing the optimal format for images can help offset the detrimental impact they can have on page speed. Sometimes, even choosing a specific file type over another can go a long way in making sure our pages remain fast for our users.
@@ -47,7 +47,7 @@ If you're not sure what format to use, JPEG is a fairly safe bet. JPEGs saved wi
 GIF files were the first image format supported in the early days of the internet. GIF files are only capable of 256 colors, which is a relic of computer capabilities from the era. Their one unique benefit over other image formats is they support animation. 
 
 <figure>
-<img alt="Image of moon orbit" height="192" src="/img/proper-gif-usage.gif" width="256" />
+<img alt="Image of moon orbit" height="192" src="/img/proper-gif-usage.gif" width="256" loading="lazy" />
 <figcaption>Animation is supported in GIF images</figcaption>
 </figure>
 
@@ -74,8 +74,7 @@ The 24-bit variety are similar to JPEGs, supporting millions of colors but usual
 Like GIFs, PNG-8 supports 256 colors. These images are best suited to illustrations or diagrams that were created digitally, such as the sewing patterns, building plans, and diagrams featured on our sites. 
 
 <figure>
-{% image "img/proper-png-usage.png", "Sewing instructions", [null, 400, 700],
-  ['png', 'webp'] %}
+{% image "img/proper-png-usage.png", "Sewing instructions", [null, 400, 700], ['png', 'webp'] %}
 <figcaption>These instructions are a perfect use of a PNG-8</figcaption>
 </figure>
 
