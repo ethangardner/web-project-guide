@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ site.language }}">
+<html lang="{{ metadata.language }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title }} | {{ site.name }}</title>
+  <title>{{ title or metadata.title }}</title>
+  <meta name="description" content="{{ description or metadata.description }}">
   <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
   <link rel="stylesheet" href="{{ '/css/global.css' | url }}">
 </head>
@@ -25,6 +26,5 @@
     {{ content | safe }}
   </div>
 </div>
-<script src="{{ '/js/scripts.js' | url }}"></script>
 </body>
 </html>
