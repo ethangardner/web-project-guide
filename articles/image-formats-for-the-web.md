@@ -9,12 +9,12 @@ Unfortunately, images are also bandwidth-intensive and are often the single larg
 <figure>
 <blockquote>Consumer engagement and likelihood to convert [are] most effected by site speed.</blockquote>
 <figcaption>
-Deloitte <cite><a href="https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/Consulting/Milliseconds_Make_Millions_report.pdf">Milliseconds Make Millions</a></cite>
+Deloitte <cite><a href="https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/Consulting/Milliseconds_Make_Millions_report.pdf">Milliseconds Make Millions (pdf)</a></cite>
 </figcaption>
 </figure>
 
 <figure>
-{% image "img/content-type-distribution.png", "Images accounted for 61% of the overall page weight in this test", [null, 400, 700], ['png', 'webp'] %}
+{% image "img/content-type-distribution.png", "", [null, 400, 700], ['png', 'webp'] %}
 <figcaption>Data from a sample article on one of our sites. 61% of the compressed page weight in this test came from images</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ If you're not sure what format to use, JPEG is a fairly safe bet. JPEGs saved wi
 
 <figure>
 {% image "img/proper-jpeg-usage.jpeg", "Wooden house in mountain setting" %}
-<figcaption>This was a perfect use of JPEG.</figcaption>
+<figcaption>This photograph with many vibrant colors was a perfect candidate for a JPEG.</figcaption>
 </figure>
 
 #### Features:
@@ -47,7 +47,7 @@ If you're not sure what format to use, JPEG is a fairly safe bet. JPEGs saved wi
 GIF files were the first image format supported in the early days of the internet. GIF files are only capable of 256 colors, which is a relic of computer capabilities from the era. Their one unique benefit over other image formats is they support animation. 
 
 <figure>
-<img alt="Image of moon orbit" height="192" src="/img/proper-gif-usage.gif" width="256" loading="lazy" />
+<img alt="Image of moon orbiting around the earth" height="192" src="/img/proper-gif-usage.gif" width="256" loading="lazy" />
 <figcaption>Animation is supported in GIF images</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ Like GIFs, PNG-8 supports 256 colors. These images are best suited to illustrati
 
 <figure>
 {% image "img/proper-png-usage.png", "Sewing instructions", [null, 400, 700], ['png', 'webp'] %}
-<figcaption>These instructions are a perfect use of a PNG-8</figcaption>
+<figcaption>These instructions are a perfect use of a PNG-8 because they're a diagram with few colors</figcaption>
 </figure>
 
 ##### Features:
@@ -124,5 +124,3 @@ Here is a similar example with the instructions from the section on PNG images.
 </a>
 <figcaption>Comparison of image formats from Photoshop's Save for Web dialog. PNG-8 is the smallest at 25kb. JPEG is 34kb, GIF is 27.2kb, and PNG-24 is the largest at 70.9kb.</figcaption>
 </figure>
-
-Images are such an important part of our content experience, but it takes some work to get it right. It's important to do so for our company and especially our users.
