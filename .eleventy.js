@@ -1,3 +1,4 @@
+const { DateTime } = require("luxon");
 const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -42,6 +43,13 @@ module.exports = function(eleventyConfig) {
 
   // shortcode
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+
+  eleventyConfig.addFilter("bust", (url) => {
+    const [urlPart, paramPart] = url.split("?");
+    const params = new URLSearchParams(paramPart || "");
+    params.set("v", DateTime.local().toFormat("X"));
+    return `${urlPart}?${params}`;
+  });
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({

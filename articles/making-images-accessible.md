@@ -11,13 +11,14 @@ In addition to providing inclusion, meaningful all text also provides benefits f
 ## What is Alt Text
 Alt text is extra data that is associated with an image that provides a description of the contents of the image within the context of how it's being used on the page.
 
-Imagine taking a friend who's blindfolded to an art museum. The _Mona Lisa_ painting catches your eye, and you walk over to examine it. Wanting to give your friend a good experience as well, you decide to describe the painting to them. Which of these descriptions you think would give your friend a better idea of what you're seeing: 
+Imagine taking a friend who's blindfolded to an art museum. The _Mona Lisa_ catches your eye, and you walk over to examine it. Wanting to give your friend a good experience as well, you decide to describe the painting to them. Which of these descriptions you think would give your friend a better idea of what you're seeing: 
 
-- **Option A:** you say "here's a painting" 
-- **Option B:** you say "here's a half-length portrait of a woman with dark, straight hair, a coy smile, and dark eyes that seem to follow my movements. She's wearing a simple, dark-colored dress with pleats and embroidery around the collar. She is seated with her right hand crossed over her left. There are mountains, a river, and a bridge in the background."
-- **Option C:** your friend has seen the _Mona Lisa_ before, so you say "here's the _Mona Lisa_."
+- **Option A:** you say "here's a painting"
+- **Option B:** your friend has seen the _Mona Lisa_ before, so you say "here's the _Mona Lisa_."
+- **Option C:** your friend is unfamiliar with the _Mona Lisa_, so you say "here's a half-length portrait of a woman with dark, straight hair, a coy smile, and dark eyes that seem to follow my movements. She's wearing a simple, dark-colored dress with pleats and embroidery around the collar. She is seated with her right hand crossed over her left. There are mountains, a river, and a bridge in the background."
 
-Options B & C are much more helpful to your friend, even though it took more effort to describe it. This is kind of like what writing meaningful all text is like, describing the subject-matter of an image to a friend.
+
+Options B & C are much more helpful to your friend. This is kind of like what writing meaningful all text is like, describing the subject-matter of an image to a friend.
 
 ## Why is it Needed?
 There are several reasons why alt text is needed. There are many users on the internet with blindness, low vision, or different types of color blindness. There is a _legal obligation_ to support these users. 
