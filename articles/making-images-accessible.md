@@ -6,7 +6,7 @@ Our [accessibility commitment](https://www.taunton.com/accessibility-commitment/
 
 Given the number of images that appear on our sites, it is especially important that we create meaningful alt text for our visual components.
 
-In addition to providing inclusion, meaningful all text also provides benefits for search engine optimization.
+In addition to providing inclusion, meaningful alt text also provides benefits for search engine optimization.
 
 ## What is Alt Text
 Alt text is extra data that is associated with an image that provides a description of the contents of the image within the context of how it's being used on the page.
@@ -18,7 +18,7 @@ Imagine taking a friend who's blindfolded to an art museum. The _Mona Lisa_ catc
 - **Option C:** your friend is unfamiliar with the _Mona Lisa_, so you say "here's a half-length portrait of a woman with dark, straight hair, a coy smile, and dark eyes that seem to follow my movements. She's wearing a simple, dark-colored dress with pleats and embroidery around the collar. She is seated with her right hand crossed over her left. There are mountains, a river, and a bridge in the background."
 
 
-Options B & C are much more helpful to your friend. This is kind of like what writing meaningful all text is like, describing the subject-matter of an image to a friend.
+Options B & C are much more helpful to your friend. This is kind of like what writing meaningful alt text is like, describing the subject-matter of an image to a friend.
 
 ## Why is it Needed?
 There are several reasons why alt text is needed. There are many users on the internet with blindness, low vision, or different types of color blindness. There is a _legal obligation_ to support these users. 
@@ -35,7 +35,9 @@ There are other scenarios as well, such as providing a fallback in case an image
 ## Situational Use
 Where and how images are used dictates the alt text requirements. There are different categories of images such as those meant to inform, decorate, or provide instruction.
 
-The [WebAIM alt text guide](https://webaim.org/techniques/alttext/) is a quick, comprehensive resource providing multiple examples on when to populate the alt text or leave it empty based on context. _Note: empty alt text is defined as having `alt=""` in the final HTML. It is never acceptable to have an image tag without the presence of the alt attribute._ 
+The [WebAIM alt text guide](https://webaim.org/techniques/alttext/) is a quick, comprehensive resource providing multiple examples on when to populate the alt text or leave it empty based on context. 
+
+_Note: empty alt text is defined as having `alt=""` in the final HTML. It is never acceptable to have an image tag without the presence of the alt attribute._ 
 
 Another helpful and authoritative resource is the [W3C decision table](https://www.w3.org/WAI/tutorials/images/decision-tree/), which provides a series of yes or no questions to help determine alt text requirements.
 
@@ -47,7 +49,9 @@ This is a special topic covered in the resources above, but it's worth calling o
 ### Mobile Users
 The image that's entered as the featured image for an article is used all over the site. What may look great for the main image for an article on desktop could become hard to read on a mobile device. 
 
-Although most of us probably use a desktop computer for our work, mobile usage exceeds desktop usage among our audience at the time of this writing. For one of our sites, 61% of user sessions were on mobile during a recent reporting window. The site with the least amount of mobile traffic during this same period had 52% of user sessions on a mobile device.
+Although most of us probably use a desktop computer for our work, **mobile usage exceeds desktop usage among our audience** at the time of this writing. 
+
+For one of our sites, 61% of user sessions were on mobile during a recent reporting window. The site with the least amount of mobile traffic during this same period had 52% of user sessions on a mobile device.
 
 <figure>
 <a href="/img/article-list-video-thumbnail-with-text-mobile.png">
