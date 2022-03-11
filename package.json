@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "eleventy",
-    "postbuild": "postcss _site/css/*.css -u autoprefixer cssnano -r --no-map",
+    "postbuild": "postcss _site/css/*.css -u autoprefixer cssnano -r --no-map && node resources/tooling/copy-files.js",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "start": "eleventy --serve",
