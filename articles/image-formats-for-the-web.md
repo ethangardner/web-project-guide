@@ -14,7 +14,7 @@ Deloitte <cite><a href="https://www2.deloitte.com/content/dam/Deloitte/ie/Docume
 </figure>
 
 <figure>
-{% image "img/content-type-distribution.png", "", [null, 400, 700], ['png', 'webp'], '(max-width: 700px) 100vw, 700px', 'eager' %}
+{% image "img/content-type-distribution.png", "", [null, 400, 700], ['webp', 'png'], '(max-width: 700px) 100vw, 700px', 'eager' %}
 <figcaption>Data from a sample article on one of our sites. 61% of the compressed page weight in this test came from images</figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ The 24-bit variety are similar to JPEGs, supporting millions of colors but usual
 Like GIFs, PNG-8 supports 256 colors. These images are best suited to illustrations or diagrams that were created digitally, such as the sewing patterns, building plans, and diagrams featured on our sites. 
 
 <figure>
-{% image "img/proper-png-usage.png", "Sewing instructions", [null, 400, 700], ['png', 'webp'] %}
+{% image "img/proper-png-usage.png", "Sewing instructions", [null, 400, 700], ['webp', 'png'] %}
 <figcaption>These instructions are a perfect use of a PNG-8 because they're a diagram with few colors</figcaption>
 </figure>
 
@@ -110,7 +110,7 @@ Here is the house image covered in the JPEG section being saved in Photoshop. Yo
 <figure>
 <a href="/img/image-save-comparison.png">
     {% image "img/image-save-comparison.png", "Photo of a house in a mountain setting being saved for web using Photoshop in different formats", [null, 400, 700],
-  ['png', 'webp'] %}
+  ['webp', 'png'] %}
 </a>
 <figcaption>Comparison of image formats from Photoshop's Save for Web dialog. JPEG is the smallest at 62.48kb. PNG-8 is 144.3kb, GIF is 164.8kb, and PNG-24 is the largest at 318kb. The PNG-24 will take twice as long to download on a mobile device when compared to the JPEG.</figcaption>
 </figure>
@@ -120,7 +120,7 @@ Here is a similar example with the instructions from the section on PNG images.
 <figure>
 <a href="/img/image-save-comparison-2.png">
     {% image "img/image-save-comparison-2.png", "Photo of step-by-step sewing instructions setting being saved for web using Photoshop in different formats", [null, 400, 700],
-  ['png', 'webp'] %}
+  ['webp', 'png'] %}
 </a>
 <figcaption>Comparison of image formats from Photoshop's Save for Web dialog. PNG-8 is the smallest at 25kb. JPEG is 34kb, GIF is 27.2kb, and PNG-24 is the largest at 70.9kb.</figcaption>
 </figure>

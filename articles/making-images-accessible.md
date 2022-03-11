@@ -27,7 +27,7 @@ There are other scenarios as well, such as providing a fallback in case an image
 
 <figure>
 <a href="/img/alt-text-wordpress-entry.png">
-{% image "img/alt-text-wordpress-entry.png", "", [null, 400, 700], ['png', 'webp'] %}
+{% image "img/alt-text-wordpress-entry.png", "", [null, 400, 700], ['webp', 'png'] %}
 </a>
 <figcaption>Alt text being entered in the WordPress media gallery</figcaption>
 </figure>
@@ -55,7 +55,7 @@ For one of our sites, 61% of user sessions were on mobile during a recent report
 
 <figure>
 <a href="/img/article-list-video-thumbnail-with-text-mobile.png">
-{% image "img/article-list-video-thumbnail-with-text-mobile.png", "Screenshot from an article list page on a mobile device", [null, 400, 700], ['png', 'webp'] %}
+{% image "img/article-list-video-thumbnail-with-text-mobile.png", "Screenshot from an article list page on a mobile device", [null, 400, 700], ['webp', 'png'] %}
 </a>
 <figcaption>On a mobile device, an image with text can be difficult to read in areas where the image does not occupy the full width of the viewport</figcaption>
 </figure>

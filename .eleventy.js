@@ -9,7 +9,7 @@ async function imageShortcode(
   src,
   alt,
   widths = [null, 400, 700],
-  formats = ['jpeg', 'webp'],
+  formats = ['webp', 'jpeg'],
   sizes = '(max-width: 700px) 100vw, 700px',
   loading = "lazy"
   ) {
