@@ -24,5 +24,8 @@
     "markdown-it-anchor": "^8.4.1",
     "postcss": "^8.4.8",
     "postcss-cli": "^9.1.0"
+  },
+  "volta": {
+    "node": "16.14.0"
   }
 }
