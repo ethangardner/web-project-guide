@@ -2,7 +2,9 @@
 layout: article
 title: Writing Performant CSS
 ---
-When users have a good experience, they view more content and are more engaged. It's in our best interest to put our content in the hands of our users as fast as we're able, regardless of the device they are using. 
+When users have a good experience, they view more content and are more engaged. It's in our best interest to put our content in the hands of our users as fast as we're able, regardless of the device they are using.
+
+Writing performant CSS is one way we can help the page render faster.
 
 ## Mobile first
 A mobile-first approach takes the most simple version of our layouts, i.e. mobile, and treats it as the baseline for all other styles. This means that we  should write CSS breakpoints with `min-width` and not with `max-width`. 
@@ -16,7 +18,7 @@ Take a typical article layout structure as an example. On mobile, the entire lay
 
 The HTML might look like this.
 
-```
+```html
 <main class="article">
   <article class="article__body">
     Here is your article body.
