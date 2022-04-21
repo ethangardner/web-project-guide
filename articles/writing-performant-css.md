@@ -96,10 +96,8 @@ __Prefer__
   }
 }
 ```
-
-<blockquote>
-On our sites currently, there are "mobile first" breakpoints set in SASS that start with <code>mf-*</code>. For example, <code>mf-tablet-p</code> will apply to anything that is a tablet in portait mode or larger. These are the ones that should be used.
-</blockquote>
+### SASS breakpoints
+On our sites currently, there are "mobile first" breakpoints set in SASS that start with `mf-*`. For example, `mf-tablet-p` will apply to anything that is a tablet in portait mode or larger. These are the ones that should be used.
 
 ## Be Aware of Layout Triggers
 When content is displayed on screen, the browser has to perform a 3-step process known layout, paint, and composite.
