@@ -34,8 +34,8 @@ __Avoid__
 ```css
 /**
  * Here we're starting with styles for large screens as the default.
- * This is bad because we're making mobile phones, who are likely to have
- * less computing power, to parse these rules when they are reset in the 
+ * This is bad because mobile phones, who are likely to have
+ * less computing power, have to parse these rules when they are reset in the 
  * media query below.
  */
 .article {
@@ -96,6 +96,10 @@ __Prefer__
   }
 }
 ```
+
+<blockquote>
+On our sites currently, there are "mobile first" breakpoints set in SASS that start with <code>mf-*</code>. For example, <code>mf-tablet-p</code> will apply for anything that is a tablet in portait mode or larger. These are the ones that should be used.
+</blockquote>
 
 ## Be Aware of Layout Triggers
 When content is displayed on screen, the browser has to perform a 3-step process known layout, paint, and composite.
