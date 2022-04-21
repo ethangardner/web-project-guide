@@ -98,7 +98,7 @@ __Prefer__
 ```
 
 <blockquote>
-On our sites currently, there are "mobile first" breakpoints set in SASS that start with <code>mf-*</code>. For example, <code>mf-tablet-p</code> will apply for anything that is a tablet in portait mode or larger. These are the ones that should be used.
+On our sites currently, there are "mobile first" breakpoints set in SASS that start with <code>mf-*</code>. For example, <code>mf-tablet-p</code> will apply to anything that is a tablet in portait mode or larger. These are the ones that should be used.
 </blockquote>
 
 ## Be Aware of Layout Triggers
