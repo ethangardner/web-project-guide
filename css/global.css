@@ -105,6 +105,15 @@ blockquote {
   padding: var(--spacing-20);
 }
 
+table {
+  border: 1px solid var(--gray-0);
+  margin-bottom: 1.5rem;
+}
+
+td, th {
+  padding: 10px;
+}
+
 /*
  * utility classes
  */
