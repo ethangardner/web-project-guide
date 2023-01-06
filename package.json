@@ -4,12 +4,12 @@
   "description": "",
   "scripts": {
     "build": "npm-run-all clean-build build:ts build:11ty -p minify:* build:css",
-    "build:css": "postcss css/app.css -o css/global.css",
+    "build:css": "postcss src/css/app.css -o css/global.css",
     "build:11ty": "eleventy",
     "build:ts": "spack",
     "clean-build": "rimraf build",
     "postbuild": "node resources/tooling/copy-files.js",
-    "watch:ts": "spack && chokidar js/*.ts -c spack",
+    "watch:ts": "spack && chokidar src/js/*.ts -c spack",
     "watch:11ty": "eleventy --serve",
     "start": "cross-env NODE_ENV=dev npm-run-all -p watch:*",
     "debug": "DEBUG=* eleventy"
