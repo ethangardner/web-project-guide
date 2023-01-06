@@ -1,6 +1,16 @@
 {
   "title": "Web Project Guide",
-  "url": "https://wpg.taunton.com/",
+  "url": "https://web-project-guide.pages.dev/",
   "language": "en",
-  "description": "Best practices for web publishing"
+  "description": "Best practices for web publishing",
+  "feed": {
+    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://web-project-guide.pages.dev/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://web-project-guide.pages.dev/feed/feed.json"
+  }
 }
