@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "npm-run-all clean-build build:ts build:11ty -p minify:* build:css",
-    "build:css": "postcss source/css/styles.css --no-map --dir build/css",
+    "build:css": "postcss css/app.css -o css/global.css",
     "build:11ty": "eleventy",
     "build:ts": "spack",
     "clean-build": "rimraf build",
