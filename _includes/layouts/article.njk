@@ -10,8 +10,8 @@ templateClass: tmpl-article
       <ul class="post-tags">
         {%- for tag in tags | filterTagList %}
           {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-          <li>
-            <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+          <li class="post-tags__item">
+            <a href="{{ tagUrl | url }}" class="post-tag icon-tag">{{ tag }}</a>
           </li>
         {%- endfor %}
       </ul>
