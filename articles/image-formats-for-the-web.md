@@ -1,6 +1,12 @@
 ---
 layout: article
 title: Image Formats for the Web
+date: 2022-03-07
+tags:
+- Images
+- Web Content
+audience:
+- Editorial
 ---
 Images convey meaning to our users that would be difficult to achieve with words alone. For many, beautiful imagery is in essential part of the content experience.
 

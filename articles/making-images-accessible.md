@@ -1,6 +1,13 @@
 ---
 layout: article
 title: Making Images Accessible
+date: 2022-03-08
+tags:
+- Accessibility
+- SEO
+audience:
+- Developers
+- Editorial
 ---
 Our [accessibility commitment](https://www.taunton.com/accessibility-commitment/) aims to make sure our content remains accessible for all users. One major component of accessibility involves providing alternate representations of content.
 

@@ -1,6 +1,12 @@
 ---
 layout: article
 title: Color Contrast Requirements
+date: 2022-03-15
+tags:
+- Accessibility
+audience:
+- Developers
+- Designers
 ---
 One important way we can meet our [accessibility commitment](https://www.taunton.com/accessibility-commitment/) is to ensure adequate color contrast in the design components created as part of our content and marketing efforts.
 

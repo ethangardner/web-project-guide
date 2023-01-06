@@ -1,6 +1,12 @@
 ---
 layout: article
 title: Writing Performant CSS
+date: 2022-04-19
+tags:
+- CSS
+- Web Performance
+audience:
+- Developers
 ---
 When users have a good experience, they view more content and are more engaged. It's in our best interest to put our content in the hands of our users as fast as we're able, regardless of the device they are using.
 

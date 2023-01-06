@@ -1,6 +1,11 @@
 ---
 layout: article
 title: All About Asset Loading
+date: 2022-05-05
+tags:
+- Web Performance
+audience:
+- Developers
 ---
 As the sites grow, more features and code gets introduced in order to support the evolution of the products.
 
