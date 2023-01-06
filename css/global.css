@@ -10,6 +10,9 @@
   --gray-0: #686868;
 }
 
+/**
+ * Global elements
+ */
 * {
   box-sizing: border-box;
 }
@@ -123,6 +126,12 @@ td, th {
   max-width: 1600px;
 }
 
+.list-reset {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .pd {
   padding: var(--spacing-20);
 }
@@ -156,6 +165,17 @@ td, th {
 .tmpl-article .content-body {
   margin: 0 auto;
   max-width: 700px;
+}
+
+/**
+ * meta info
+ */
+.post-tags {
+  display: flex;
+}
+
+.post-tags__item {
+  margin-right: 10px;
 }
 
 /**
