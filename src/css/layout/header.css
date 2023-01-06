@@ -5,18 +5,18 @@
 
 .button--skip-link {
   background: var(--bg);
-  border: 2px solid var(--black-1);
-  border-radius: 4px;
+  border: var(--border-size-2) solid var(--black-1);
+  border-radius: var(--size-2);
   color: var(--black-1);
   display: inline-block;
   line-height: 1;
   text-decoration: none;
   padding: var(--size-2) var(--size-3);
-  left: 5px;
+  left: var(--size-1);
   position: absolute;
   top: -1000px;
 }
 
 .button--skip-link:focus {
-  top: 10px;
+  top: var(--size-3);
 }

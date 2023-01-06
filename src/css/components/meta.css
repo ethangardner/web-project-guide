@@ -3,5 +3,5 @@
 }
 
 .post-tags__item {
-  margin-right: 10px;
+  margin-right: var(--size-3);
 }
