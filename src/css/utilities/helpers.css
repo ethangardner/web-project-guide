@@ -1,0 +1,17 @@
+/*
+ * utility classes
+ */
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.list-reset {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.pd {
+  padding: var(--size-4);
+}

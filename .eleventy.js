@@ -38,7 +38,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
-  eleventyConfig.addWatchTarget("./css/");
+  eleventyConfig.addWatchTarget("./css");
 
   // Alias `layout: article` to `layout: layouts/post.njk`
   eleventyConfig.addLayoutAlias("article", "layouts/article.njk");

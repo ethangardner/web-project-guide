@@ -1,0 +1,9 @@
+.icon-date {
+  background: url(/img/ui/calendar.svg) no-repeat 0 50%;
+  padding-left: var(--size-5);
+}
+
+.icon-tag {
+  background: url(/img/ui/tag.svg) no-repeat 0 50%;
+  padding-left: var(--size-5);
+}

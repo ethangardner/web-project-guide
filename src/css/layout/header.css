@@ -1,0 +1,22 @@
+.siteheader__logo {
+  fill: var(--black-1);
+  width: 150px;
+}
+
+.button--skip-link {
+  background: var(--bg);
+  border: 2px solid var(--black-1);
+  border-radius: 4px;
+  color: var(--black-1);
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  padding: var(--size-2) var(--size-3);
+  left: 5px;
+  position: absolute;
+  top: -1000px;
+}
+
+.button--skip-link:focus {
+  top: 10px;
+}
