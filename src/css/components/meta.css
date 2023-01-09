@@ -13,7 +13,7 @@
 }
 
 .post-tag {
-  color: inherit;
+  color: var(--black-1);
   display: flex;
   font-size: var(--size-3);
   text-decoration: none;
