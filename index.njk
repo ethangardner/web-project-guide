@@ -1,16 +1,25 @@
 ---
 layout: layouts/base.njk
-title: Web Project Guide
+title: Recent Articles
 ---
 <div class="content">
   <h1>{{ title }}</h1>
-  <ul class="articlelist">
-    {%- for article in collections.articles -%}
-      <li>
-        <a href="{{ article.url | url }}"
-           class="articlelist-link">{% if article.data.title %}{{ article.data.title }}{% else %}
-            <code>{{ article.url }}</code>{% endif %}</a>
+  <ol reversed class="postlist list-reset">
+    {% for article in collections.articles | reverse %}
+      <li class="postlist-item{% if article.url == url %} postlist-item-active{% endif %}">
+        <h2>
+          <a href="{{ article.url | url }}" class="postlist-link">{% if article.data.title %}{{ article.data.title }}{% else %}<code>{{ article.url }}</code>{% endif %}</a>
+        </h2>
+        <time class="post-date icon--date" datetime="{{ article.date | htmlDateString }}">{{ article.date | readableDate }}</time>
+        <ul class="post-tags list-reset">
+          {% for tag in article.data.tags | filterTagList %}
+            {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+            <li class="post-tags__item">
+              <a href="{{ tagUrl | url }}" class="post-tag icon--tag">{{ tag }}</a>
+            </li>
+          {% endfor %}
+        </ul>
       </li>
-    {%- endfor -%}
-  </ul>
+    {% endfor %}
+  </ol>
 </div>
