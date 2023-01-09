@@ -2,6 +2,7 @@
 layout: article
 title: Writing Performant CSS
 date: 2022-04-19
+teaser: CSS is a blocking resource. Here's how to structure it to make sure its performance impact is minimized.
 tags:
 - CSS
 - Web Performance

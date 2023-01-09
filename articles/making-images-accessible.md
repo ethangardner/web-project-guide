@@ -2,6 +2,7 @@
 layout: article
 title: Making Images Accessible
 date: 2022-03-08
+teaser: Alt text on images is required for accessibility and can also help with SEO.  
 tags:
 - Accessibility
 - SEO

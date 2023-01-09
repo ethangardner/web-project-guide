@@ -2,6 +2,7 @@
 layout: article
 title: Color Contrast Requirements
 date: 2022-03-15
+teaser: How to ensure colors have enough contrast to remain accessible for everyone.
 tags:
 - Accessibility
 audience:

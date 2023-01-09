@@ -2,6 +2,7 @@
 layout: article
 title: Image Formats for the Web
 date: 2022-03-07
+teaser: Know what image format type to use in different scenarios.
 tags:
 - Images
 - Web Content

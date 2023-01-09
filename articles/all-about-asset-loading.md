@@ -2,6 +2,7 @@
 layout: article
 title: All About Asset Loading
 date: 2022-05-05
+teaser: When, where, and how things are loaded can impact a user's experience and page performance.
 tags:
 - Web Performance
 audience:

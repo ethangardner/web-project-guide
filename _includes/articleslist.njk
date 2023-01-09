@@ -5,6 +5,7 @@
         <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
       </h2>
       <time class="post-date icon--date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <p class="post-teaser">{{ post.data.teaser }}</p>
       <ul class="post-tags list-reset">
       {% for tag in post.data.tags | filterTagList %}
         {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}

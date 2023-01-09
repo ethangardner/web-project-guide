@@ -11,6 +11,7 @@ title: Recent Articles
           <a href="{{ article.url | url }}" class="postlist-link">{% if article.data.title %}{{ article.data.title }}{% else %}<code>{{ article.url }}</code>{% endif %}</a>
         </h2>
         <time class="post-date icon--date" datetime="{{ article.date | htmlDateString }}">{{ article.date | readableDate }}</time>
+        <p class="post-teaser">{{ article.data.teaser }}</p>
         <ul class="post-tags list-reset">
           {% for tag in article.data.tags | filterTagList %}
             {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}

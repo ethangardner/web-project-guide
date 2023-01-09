@@ -6,7 +6,7 @@
 .button--skip-link {
   background: var(--bg);
   border: var(--border-size-2) solid var(--black-1);
-  border-radius: var(--size-2);
+  border-radius: var(--size-1);
   color: var(--black-1);
   display: inline-block;
   line-height: 1;
