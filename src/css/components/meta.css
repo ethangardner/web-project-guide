@@ -3,5 +3,22 @@
 }
 
 .post-tags__item {
-  margin-right: var(--size-3);
+  background-color: var(--gray-3);
+  border-radius: var(--size-1);
+  padding: var(--size-2);
+}
+
+.post-tags__item + .post-tags__item {
+  margin-left: var(--size-3);
+}
+
+.post-tag {
+  color: inherit;
+  display: flex;
+  font-size: var(--size-3);
+  text-decoration: none;
+}
+
+.post-tags__item:has(.post-tag):hover {
+  background-color: var(--gray-4);
 }
