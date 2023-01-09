@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Recent Articles
 ---
 <div class="content">
-  <h1>{{ title }}</h1>
+  <h1 class="collection-title">{{ title }}</h1>
   <ol reversed class="postlist list-reset">
     {% for article in collections.articles | reverse %}
       <li class="postlist-item{% if article.url == url %} postlist-item-active{% endif %}">

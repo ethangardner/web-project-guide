@@ -4,6 +4,7 @@
 @import 'utilities/helpers.css';
 @import 'layout/header.css';
 @import 'layout/article.css';
+@import 'layout/collection.css';
 @import 'components/postlist.css';
 @import 'components/meta.css';
 @import 'components/icons.css';
