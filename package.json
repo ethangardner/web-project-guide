@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "npm-run-all clean-build build:ts build:11ty -p minify:* build:css",
+    "build": "npm-run-all clean-build build:ts build:11ty -p build:css",
     "build:css": "postcss src/css/app.css -o _site/css/global.css",
     "build:11ty": "eleventy",
     "build:ts": "spack",
-    "clean-build": "rimraf build",
+    "clean-build": "rimraf _site",
     "postbuild": "node resources/tooling/copy-files.js",
     "watch:css": "npm run build:css && chokidar src/css/**/*.css -c \"npm run build:css\"",
     "watch:ts": "spack && chokidar src/js/*.ts -c spack",
