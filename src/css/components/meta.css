@@ -19,6 +19,6 @@
   text-decoration: none;
 }
 
-.post-tags__item:has(.post-tag):hover {
+.post-tags__item:hover {
   background-color: var(--gray-4);
 }

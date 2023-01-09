@@ -7,7 +7,7 @@ module.exports = config({
   },
 
   output: {
-    path: path.join(__dirname, "js"),
+    path: path.join(__dirname, "_site/js"),
     name: "main.js",
   },
 

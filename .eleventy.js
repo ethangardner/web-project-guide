@@ -32,13 +32,10 @@ async function imageShortcode(
 module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
 
   // Add plugins
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
-
-  eleventyConfig.addWatchTarget("./css");
 
   // Alias `layout: article` to `layout: layouts/post.njk`
   eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
