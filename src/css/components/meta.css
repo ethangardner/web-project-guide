@@ -1,6 +1,7 @@
 .post-date {
   display: block;
   color: var(--gray-7);
+  font-size: var(--font-size-1);
   margin-bottom: var(--size-2);
 }
 
@@ -20,7 +21,7 @@
 
 .post-tag {
   display: flex;
-  font-size: var(--size-3);
+  font-size: var(--font-size-1);
   text-decoration: none;
 }
 
