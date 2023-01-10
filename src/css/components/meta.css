@@ -7,16 +7,19 @@
 
 .post-tags {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .post-tags__item {
   background-color: var(--gray-3);
   border-radius: var(--size-1);
+  margin-bottom: var(--size-3);
+  margin-right: var(--size-3);
   padding: var(--size-2);
 }
 
-.post-tags__item + .post-tags__item {
-  margin-left: var(--size-3);
+.post-tags__item:last-of-type {
+  margin-right: 0;
 }
 
 .post-tag {
