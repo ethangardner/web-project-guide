@@ -8,5 +8,18 @@
   border: 1px solid var(--gray-2);
   border-radius: var(--size-1);
   box-shadow: 0 0 var(--size-2) var(--gray-4);
+  cursor: pointer;
   padding: var(--size-4);
+}
+
+.postlist-item:focus-within, .postlist-item:hover {
+  border-color: var(--link-rest);
+}
+
+.postlist-link {
+  text-decoration: none;
+}
+
+.postlist-link {
+  text-decoration: none;
 }

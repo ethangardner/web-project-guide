@@ -58,7 +58,11 @@ h6 {
 }
 
 a {
-  color: var(--link);
+  color: var(--link-rest);
+}
+
+a:hover {
+  color: var(--link-hover);
 }
 
 img {

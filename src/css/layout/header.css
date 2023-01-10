@@ -1,4 +1,8 @@
-.siteheader__logo {
+.siteheader-logo {
+  display: inline-block;
+}
+
+.logo-svg {
   fill: var(--black-1);
   width: 150px;
 }
