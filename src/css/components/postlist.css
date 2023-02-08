@@ -17,9 +17,7 @@
 }
 
 .postlist-link {
+  color: var(--black-1);
   text-decoration: none;
 }
 
-.postlist-link {
-  text-decoration: none;
-}
