@@ -15,7 +15,7 @@ These may need immediate attention based on their severity. The schedule on thes
 
 - Security vulnerabilities for critical pieces of code, infrastructure, and architecture (e.g. Server OS, 3rd party libraries and services, WordPress core and plugins, ElasticSearch, etc)
 
-## Yearly
+## Annually
 These often correspond with budgets or part of a larger conversation around technical direction. More frequent reviews may be warranted in some cases.
 
 - AWS cost savings measures and schedules.
