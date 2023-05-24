@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Browser support
+title: Browser Support
 date: 2023-02-09
 teaser: Using analytics data to decide what browsers to support
 tags:
