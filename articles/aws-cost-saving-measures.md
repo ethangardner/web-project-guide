@@ -2,7 +2,7 @@
 layout: article
 title: AWS Savings Plans
 date: 2023-04-28
-teaser: Cost reduction measures for AWS
+teaser: Cost reduction measures using savings plans
 tags:
 - Web Performance
 - Cost Reduction
