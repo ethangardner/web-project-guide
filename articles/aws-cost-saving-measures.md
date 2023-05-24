@@ -63,13 +63,16 @@ Similar to the terms on the Compute and EC2 Savings Plans, these are 1-year or 3
 ## Media Delivery
 Media delivery costs are another expensive part of running our business. In order to reduce this cost, we use AWS Cloudfront and buy the cost savings package for that as well. Known as the [Security Savings Bundle](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/savings-bundle.html), we commit to spending a certain amount on this each month. It's easiest to estimate this based on overall bandwidth per region and calculate the price from there.
 
-The cost savings with the security savings plan is 30% off the standard data transfer rate. The US and Canada are in the cheapest price class at $0.075/GB, so if we reliably used 10TB of data in this region every month, our commitment would be as follows: 
+The cost savings with the security savings plan is 30% off the standard data transfer rate. The US and Canada are in the cheapest price class at $0.075/GB, so if we reliably used 10TB (10240GB) of data in this region every month, our commitment would be as follows: 
 
 ```
 // Cost commitment formula
-// Data Transfer in GB * Price class cost per GB * discounted rate
+// Data Transfer in GB * Cost per GB * discounted rate
 
-(1024GB * 10) * $0.075 * 0.7 = $537.60
+10240GB * $0.075 * 0.7 = $537.60
 ```
 
 These plans can be combined. For example, we could commit to $500 per month in April, and if we notice we are exceeding that number for a few months, we could buy another plan in September to cover the difference.
+
+## Conclusion
+A lot of research goes into making sure we're cost-effective with our application delivery. Our strategy is reviewed frequently to make sure we're controlling costs and reducing our waste.   
