@@ -76,14 +76,15 @@ When you're assessing a new tool, here are some questions to ask the vendor.
 #### How is it implemented?
 Usually, the vendor provides a will give you a snippet of JavaScript or a script tag that goes on the page. If this is the case, the script tag should be able to accommodate the following:
 
-- Able to be loaded with Google Tag Manager, ideally with a [native tag configuration](https://support.google.com/tagmanager/answer/3281060?hl=en).
+- Is the product to be loaded with Google Tag Manager, ideally with a [native tag configuration](https://support.google.com/tagmanager/answer/3281060?hl=en).
 - Does not use `document.write()`
-- Can be used with `async` or `defer`
-- Is [optimized for bfcache](https://web.dev/bfcache/#optimize-your-pages-for-bfcache)
-- 2 or fewer variables introduced into the global scope
-- Any CSS used by the third party should be scoped using high specificity, a scoped selector, or by compiled CSS module.
-- Compliant with current user privacy data regulations and laws
-- Does not use synchronous XHR
+- The script can be used with `async` or `defer` on the script tag
+- Your product is [optimized for bfcache](https://web.dev/bfcache/#optimize-your-pages-for-bfcache)
+- 2 or fewer variables are introduced into the global scope
+- Any CSS is scoped using high specificity, a scoped selector, or by compiled CSS module.
+- The product and data collection is compliant with current user privacy data regulations and laws
+- There are no uses of synchronous XHR
+- The product CSS does not set a `z-index` > 10 on any element
 
 It is often the case that the vendor will provide hosting for the script and request that it be loaded from one of their domains. If that is the case, the following statements should be true:
 
@@ -92,4 +93,35 @@ It is often the case that the vendor will provide hosting for the script and req
 - Uses a Content Delivery Network (CDN) for delivery
 - Assets are loaded from 2 domains or less
 - Does not use redirects
-- All assets are served with compression such as gzip or brotli. The total combined transfer size of all assets after compression should be < 50kb.
+- All assets are served with compression such as gzip or brotli. The total combined transfer size of all assets after compression should be < 50kb
+
+#### Sample script
+
+Hi {vendor/sales rep},
+
+I'm interested in your product. I know that most products will provide a snippet of JavaScript to put on the site, but our development team has asked us to make sure that you can answer "yes" to all the questions below:
+
+- Is the product to be loaded with Google Tag Manager, ideally with a [native tag configuration](https://support.google.com/tagmanager/answer/3281060?hl=en).
+- There are no calls to `document.write()` or the browser's `console` methods.
+- The script can be used with `async` or `defer` on the script tag
+- Your product is [optimized for bfcache](https://web.dev/bfcache/#optimize-your-pages-for-bfcache)
+- 2 or fewer variables are introduced into the global scope
+- Any CSS is scoped using high specificity, a scoped selector, or by compiled CSS module.
+- The product and data collection is compliant with current user privacy data regulations and laws
+- There are no uses of synchronous XHR
+- The product CSS does not set a `z-index` > 10 on any element
+
+If the script is to be hosted on your domains can you also answer yes to the following:
+
+- Assets are served with appropriate content-type header. e.g. `text/javascript` for JavaScript files, `text/html` for HTML files, and `text/css` for CSS files.
+- Any assets loaded by your product are served over HTTPS using HTTP/2 or greater
+- Your product uses a Content Delivery Network (CDN) for delivery of its assets
+- Assets are loaded from 2 domains or fewer
+- Does not use redirects
+- All assets are served with compression such as gzip or brotli. 
+- Is the total combined transfer size of all assets after compression should be < 50kb
+
+If you can answer yes to the following, I'd like to {whatever your next steps are}.
+
+Thanks,
+{Your name}
