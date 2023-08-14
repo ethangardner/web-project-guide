@@ -13,7 +13,7 @@ A/B testing is an important tool for improving the performance of products and s
 ## Problems with previous A/B tests
 Previously, A/B testing was executed using vendors like VWO or Google Optimize. These products work by using JavaScript to manage the test variations and display the proper variant to the user. These tests were incredibly easy to set up and execute, but unfortunately, the JavaScript approach significantly impacts the user experience and no information is displayed to the user until the test logic has completed.
 
-## Server-side A/B tests
+## Edge-side A/B tests
 While not as easy to create tests, using A/B logic on the server is more ideal from a user perspective, and that is the approach we should employ going forward. Our approach makes use of a Cloudflare Worker, a `<template>` tag with data attributes in the application code, and Google Analytics to record the data from the tests.
 
 Moving the logic to Cloudflare allows us to execute the tests after caching has happened and not putting additional stress on our origin server.
@@ -35,7 +35,9 @@ A_B_TEST_ID = "subscribe-text"
 
 The `A_B_TEST_ENABLED` is a boolean value and the `A_B_TEST_ID` is the name of the test. Each test will divide traffic in a 50/50 split between the control group and the test group.
 
-On the initial request, the user is assigned to a group, and a cookie is set with the test ID and group information. The cookie name/value is assigned in the following format `cf-test_${A_B_TEST_ID}=(control|test)`. The cookie will persist for 2 years from the initial request.
+On the initial request, the user is assigned to a group, and a cookie is set with the test ID and group information. The cookie name/value is assigned in the following format `cf-a-b-test=${slugify(A_B_TEST_ID)}-(control|test)`. The cookie will persist for 2 years from the initial request.
+
+On the server, if you want to see a variant, you need to pass in both the test ID and the group assignment as a query parameter e.g. `/?cloudflare-a-b-test-group=test&cloudflare-a-b-test-id=subscribe-text`. Note that you cannot manipulate cookies this way; only the UI presentation will change. 
 
 ### Application code
 Tests in the application are defined using the `<template>` element with two specific data attributes, `data-cloudflare-a-b-test-id` and `data-cloudflare-a-b-test-group`.
